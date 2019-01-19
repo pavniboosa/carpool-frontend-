@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+	input[type=text]{
+  width: 40%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 10px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 20%;
+}
+
+</style>
+<title>Page Title</title>
+</head>
+<body>
+
+<center style="color:green"><font size="16">CREATE ACCOUNT</h1>
+</font>
+</center>
+<center><font size="12">
+<form action="/action_page.php" target="_blank" method="GET">
+<fieldset><!--to create a  seperate fieldspace-->
+<legend>Credentials</legend><!--inorder to give name-->
+Username :<br>
+<input type="text" name="username"  required>
+<br>
+password:<br>
+<input type="text" name="password" required>
+<br>
+confirm password:<br>
+<input type="text" name="confirmpassword" required>
+
+<br>
+
+<div>
+
+      	<button type="createaccount" onclick="createaccount()">Create account</button>
+        <script type="text/javascript">
+	function createaccount()
+	{		window.location="trip.html";
+	}
+        </script>
+    </div>
+</fieldset>
+</form>
+</center>
+
+
+</body>
+</html>
